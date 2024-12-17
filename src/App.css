@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
-}
+@media screen and (max-width: 640px) {
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 1rem;
+    }
+  
+    nav .flex.items-center {
+      margin-bottom: 0.5rem;
+    }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+    .chevron-menu {
+      display: none;
+    }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    .fixed.top-0.left-0.h-full.w-64 {
+      width: 100%;
+    }
+  
+    .max-w-2xl {
+      width: 100%;
+    }
+  
+    .mt-8.flex.justify-center.gap-4 {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .fixed.top-20.right-20 {
+      top: 5rem;
+      right: 1rem;
+    }
   }
+  
+  @media screen and (min-width: 641px) and (max-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  
+    nav .flex.items-center {
+      margin-right: 1rem;
+    }
+  
+    .max-w-2xl {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  
+    .mt-8.flex.justify-center.gap-4 {
+      gap: 2rem;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.leaderboard-button {
+    transition: transform 0.5s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
+.leaderboard-button:hover {
     transform: rotate(360deg);
-  }
 }
+  
+.moon-hover {
+    transition: color 0.3s ease-in-out;
+}
+
+.moon-hover:hover {
+    color: #00008b; 
+}
+
+.sun-hover {
+    transition: color 0.3s ease-in-out;
+}
+
+.sun-hover:hover {
+    color: #FFD700; 
+}
+
+.menu-glow {
+    box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.7); 
+    transition: box-shadow 0.5s ease-in-out;
+}
+  
+  
