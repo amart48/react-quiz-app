@@ -16,7 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject", 
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -38,9 +40,10 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.2.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.15"
   },
-  "homepage": "https://cgtweb2.tech.purdue.edu/courses/cgt353/mart2164/project2/"
+  "homepage": "https://amart48.github.io/react-quiz-app"
 
 }
